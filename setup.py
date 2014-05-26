@@ -19,6 +19,9 @@ setup(
     long_description=README,
     url='http://github.com/MGXRace/Spirit-Air/',
     packages=find_packages(exclude=['example', ]),
+    entry_points='''
+    [spirit.themes]
+    Air=air:Air''',
     include_package_data=True,
     zip_safe=False,
     install_requires=REQUIREMENTS,
